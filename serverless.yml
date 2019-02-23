@@ -1,0 +1,25 @@
+service:
+  name: aws-nodejs-typescript
+
+# Add the serverless-webpack plugin
+plugins:
+  - serverless-webpack
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+
+functions:
+  getHello:
+    handler: src/getHello.hello
+    events:
+      - http:
+          method: get
+          path: /api/hello
+  postHello:
+    handler: src/postHello.run
+    events:
+      - http:
+          method: post
+          path: /api/hello
