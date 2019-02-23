@@ -5,7 +5,7 @@
   "main": "handler.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "debug": "set SLS_DEBUG=* && node inspect \"node_modules/serverless/bin/serverless\" offline -s dev"
+    "start": "serverless offline -s dev"
   },
   "dependencies": {},
   "devDependencies": {
