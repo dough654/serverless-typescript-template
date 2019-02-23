@@ -1,11 +1,10 @@
 import { APIGatewayProxyHandler } from 'aws-lambda';
 
 export const run: APIGatewayProxyHandler = async (event, _context) => {
-  console.log('i ran')
   return {
-    statusCode: 200,
+    statusCode: 201,
     body: JSON.stringify({
-      message: 'Got it from the post',
+      message: 'Hello From Post',
       input: event,
     }),
   };

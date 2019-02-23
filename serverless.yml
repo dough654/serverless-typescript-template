@@ -12,7 +12,7 @@ provider:
 
 functions:
   getHello:
-    handler: src/getHello.hello
+    handler: src/getHello.run
     events:
       - http:
           method: get
